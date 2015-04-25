@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>Câmara Municipal do Porto</title>
+    <meta name="Resource-type" content="Document"/>
+
+    <link rel="stylesheet" type="text/css" href="bootstrap.css"/>
+    <link rel="stylesheet" type="text/css" href="../jquery.fullPage.css"/>
+    <link rel="stylesheet" type="text/css" href="styles.css"/>
+
+
+    <!--[if IE]>
+    <script type="text/javascript">
+        var console = {
+            log: function () {
+            }
+        };
+    </script>
+    <![endif]-->
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+
+    <script type="text/javascript" src="../jquery.fullPage.js"></script>
+    <script type="text/javascript" src="examples1.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('#fullpage').fullpage({
+                sectionsColor: ['', '#4BBFC3', '#7BAABE', '#736AFF', '#ccddff'],
+                anchors: ['firstPage', 'secondPage', '3rdPage', '4thpage', 'lastPage'],
+                menu: '#menu',
+                scrollingSpeed: 1000,
+                resize: false
+            });
+
+        });
+    </script>
+
+</head>
+<body>
+
+<ul id="menu">
+    <li data-menuanchor="firstPage"><a href="#firstPage">Início</a></li>
+    <li data-menuanchor="secondPage"><a href="#secondPage">Registo</a></li>
+    <li data-menuanchor="3rdPage"><a href="#3rdPage">Inventário</a></li>
+    <li data-menuanchor="4thpage"><a href="#4thpage">Análise</a></li>
+</ul>
+
+
+<div id="fullpage">
+    <div class="section" id="section0">
+        <div class="container">
+            <h1>Ativos</h1>
+
+            <p>Registo e análise dos ativos (ISO/ICE 207001)</p>
+        </div>
+        <!--<img src="imgs/logoPorto.png" alt="logoPorto"/>-->
+    </div>
+    <div class="section" id="section1">
+        <div class="intro">
+            <h1>Registo de Ativos</h1>
+
+            <p>Este formulário destina-se a regitar todos os ativos a considerar. Apenas os ativos que justifiquem
+                importância no funcionamento de todos os processos em causa devem ser registados</p>
+            <br><br><br><br><br>
+
+            <div id="formAtivo">
+                <form id="formRegisto">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="a">Nome de Ativoteste</label>
+                                <input class="form-control" id="a" type="text">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <label for="b">Localização do Ativo</label>
+                                <input class="form-control" id="b" type="text">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="c">Tipo de Ativo</label>
+                                <input class="form-control" id="c" type="text">
+                            </div>
+                        </div>
+
+                        <div class="col-md-4">
+
+                            <div class="form-group">
+                                <label for="b2">valor do Ativo</label>
+                                <input class="form-control" id="b2" type="text">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="c2">valor do impacto</label>
+                                <input class="form-control" id="c2" type="text">
+                            </div>
+                        </div>
+
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <label for="c3">Observações</label>
+                                <textarea class="form-control" id="c3"></textarea>
+                                <!--<input class="form-control" id="c3" type="text">-->
+                            </div>
+                        </div>
+                    </div>
+                    <a href="#send" class="btn btn-primary btn-block">Submeter</a>
+                </form>
+            </div>
+
+        </div>
+    </div>
+    <div class="section" id="section2">
+        <div class="slide">
+            <div class="intro">
+                <h1>Inventário de ativos</h1>
+
+                <p>Neste espaço estão descritos todos os ativos relevantes ao funcionamento de toda a estrutura que está
+                    incluída no âmbito em causa (Refeições nas escolas). </p>
+                <img src="imgs/slider.png" alt="slider"/>
+            </div>
+
+        </div>
+        <div class="slide">
+            <div class="intro">
+                <img src="imgs/1.png" alt="simple"/>
+
+                <h1>Simple</h1>
+
+                <p>Easy to use. Configurable and customizable.</p>
+            </div>
+        </div>
+        <div class="slide">
+            <div class="intro">
+                <img src="imgs/2.png" alt="Cool"/>
+
+                <h1>Cool</h1>
+
+                <p>It just looks cool. Impress everybody with a simple and modern web design!</p>
+            </div>
+        </div>
+        <div class="slide">
+            <div class="intro">
+                <img src="imgs/3.png" alt="Compatible"/>
+
+                <h1>Compatible</h1>
+
+                <p>Working in modern and old browsers too! IE 8 users don't have the fault of using that horrible
+                    browser! Lets give them a chance to see your site in a proper way!</p>
+            </div>
+        </div>
+    </div>
+    <div class="section" id="section3">
+        <div class="intro">
+            <h1>Working On Tablets</h1>
+
+            <p>
+                Designed to fit to different screen sizes as well as tablet and mobile devices.
+                <br/><br/><br/><br/><br/><br/>
+            </p>
+        </div>
+        <img src="imgs/tablets.png" alt="tablets"/>
+    </div>
+</div>
+
+</body>
+</html>
